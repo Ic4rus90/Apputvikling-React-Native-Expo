@@ -1,0 +1,45 @@
+{
+  "cli": {
+    "version": ">= 3.10.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug",
+	"buildType": "app-bundle"
+      },
+      "ios": {
+        "buildConfiguration": "Debug",
+        "resourceClass": "m-medium"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    },
+      "test": {
+        "android": {
+          "gradleCommand": ":app:assembleRelease :app:assembleAndroidTest -DtestBuildType=release",
+          "withoutCredentials": true
+        },
+        "ios": {
+          "simulator": true
+        }
+      },
+    "production": {
+      "autoIncrement": true,
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+
+  
+}

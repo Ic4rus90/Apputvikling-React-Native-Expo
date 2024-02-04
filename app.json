@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "TaskTamer",
+    "slug": "TaskTamer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "plugins": [
+      "@config-plugins/detox"
+    ],
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f2f2f2"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tasktamer.tasktamer"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f2f2f2"
+      },
+      "package": "com.tasktamer.tasktamer"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4e242d84-c8a9-4b3c-a88b-a4ed90bca911"
+      }
+    }
+  }
+}
